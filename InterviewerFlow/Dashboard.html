@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlairX Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                White: "#FFFFFF",
+                Black: "#000000",
+                MidnightBlue: "#204370",
+                DarkBlue: "#002448",
+                BlueGreen: "#68aab0",
+                LightGreen: "#e3fafb",
+                DarkGrey: "#454356",
+                Grey: "#807d9b",
+                LightGrey: "#9c9ab1",
+                OffWhite: "#D9D9D9",
+            }
+            }
+        }
+        }
+    </script>
+    </head>
+    <body class="bg-gray-50 font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-DarkBlue text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+        <div class="text-2xl font-semibold"><img class="w-20" src="../FlairXLogo.jpg" /></div>
+        <div class="flex gap-6">
+            <a href="#" class="hover:underline">About Us</a>
+            <a href="#" class="hover:underline">Services</a>
+            <a href="#" class="hover:underline">Resources</a>
+            <a href="#" class="hover:underline">Contact us</a>
+            <div class="flex items-center gap-2">
+            <a href="#" class="hover:underline text-BlueGreen">For Interviewer </a>
+            <img src="../assets/DownArrow.svg" />
+            </div>
+        </div>
+        <img src="../assets/SampleAvatar.svg" alt="User Avatar" class="w-10 h-10 rounded-full">
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto py-8">
+        <h1 class="text-3xl font-bold text-DarkBlue">Hello FlairEvaluator!</h1>
+        <button class="flex gap-3 mt-4 px-6 py-2 bg-DarkBlue text-white rounded-full flex items-center">
+        <span>Change your availability</span>
+        <img src="../assets/Calendar.svg" />
+        </button>
+
+        <!-- Tabs -->
+        <div class="mt-6">
+        <ul class="flex border-b">
+            <li class="mr-1">
+            <a class="inline-block py-2 px-4 text-gray-500 hover:text-BlueGreen" href="#">Pending Feedback</a>
+            </li>
+            <li class="mr-1">
+            <a class="inline-block py-2 px-4 text-BlueGreen border-b-2 border-BlueGreen font-semibold" href="#">Upcoming Interviews</a>
+            </li>
+            <li class="mr-1">
+            <a class="inline-block py-2 px-4 text-gray-500 hover:text-BlueGreen" href="#">Past Interviews</a>
+            </li>
+        </ul>
+        </div>
+
+        <!-- Date & Filter -->
+        <div class="flex justify-between mt-6 items-center">
+        <span class="text-gray-600">Today 08/14/2024</span>
+        <div class="flex space-x-4 items-center">
+            <div class="flex " >
+                <button class="px-4 py-2 bg-DarkBlue text-white rounded-l">Day</button>
+                <button class="px-4 py-2  ">Week</button>
+                <button class="px-4 py-2  rounded-r">Month</button>
+            </div>
+            <button class="flex gap-2 px-4 py-2 border border-BlueGreen rounded-3xl flex items-center">
+            <span>Filter by Role</span> 
+            <img class="w-4" src="../assets/Filter.svg" />
+            </button>
+        </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="grid grid-cols-3 gap-6 mt-6">
+        <!-- Interview Card 1 -->
+            <div class=" flex flex-col justify-between bg-white px-4 pt-6 rounded-lg shadow-md bg-gradient-to-b from-BlueGreen from-[5%] to-[5%]">
+                <div class="flex flex-col gap-6 py-2">
+                    <div class="flex justify-between items-start">
+                        <div>
+                        <div class="flex items-center gap-4">
+                            <h2 class="text-lg font-bold">Jane D</h2>
+                            <p class="text-sm text-gray-500">She/Her (EST)</p>
+                        </div>
+                        <p class="mt-2 text-gray-600">Software Engineer II</p>
+                        </div>
+                        <img src="../assets/Copy.svg" />
+                    </div>
+                    <a href="#" class="block underline">Read role requirements</a>
+                </div>
+                <div class="flex justify-end border-t py-3">
+                    <button class="px-6 py-2 border border-gray-300 rounded-3xl hover:bg-gray-100 ">Start Interview</button>
+                </div>
+            </div>
+
+            <!-- Interview Card 2 -->
+            <div class=" flex flex-col justify-between bg-white px-4 pt-6 rounded-lg shadow-md bg-gradient-to-b from-BlueGreen from-[5%] to-[5%]">
+                <div class="flex flex-col gap-6 py-2">
+                    <div class="flex justify-between items-start">
+                        <div>
+                        <div class="flex items-center gap-4">
+                            <h2 class="text-lg font-bold">Svetlana D</h2>
+                            <p class="text-sm text-gray-500">She/Her (EST)</p>
+                        </div>
+                        <p class="mt-2 text-gray-600">Product Manager</p>
+                        </div>
+                        <img src="../assets/Copy.svg" />
+                    </div>
+                    <a href="#" class="block underline">Read role requirements</a>
+                </div>
+                <div class="flex justify-end border-t py-3">
+                    <button class="px-6 py-2 border border-gray-300 rounded-3xl hover:bg-gray-100 ">Start Interview</button>
+                </div>
+            </div>
+
+            <!-- Interview Card 3 -->
+            <div class=" flex flex-col justify-between bg-white px-4 pt-6 rounded-lg shadow-md bg-gradient-to-b from-BlueGreen from-[5%] to-[5%]">
+                <div class="flex flex-col gap-6 py-2">
+                    <div class="flex justify-between items-start">
+                        <div>
+                        <div class="flex items-center gap-4">
+                            <h2 class="text-lg font-bold">Svetlana D</h2>
+                            <p class="text-sm text-gray-500">She/Her (EST)</p>
+                        </div>
+                        <p class="mt-2 text-gray-600">Product Manager</p>
+                        </div>
+                        <img src="../assets/Copy.svg" />
+                    </div>
+                    <a href="#" class="block underline">Read role requirements</a>
+                </div>
+                <div class="flex justify-end border-t py-3">
+                    <button class="px-6 py-2 border border-gray-300 rounded-3xl hover:bg-gray-100 ">Start Interview</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </body>
+</html>
